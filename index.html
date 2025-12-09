@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Shrestha — GCSP E-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Hamburger Menu -->
+    <button id="mobileMenuBtn" class="mobile-menu-btn">
+        <i data-feather="menu"></i>
+    </button>
+
+    <!-- Fixed Left Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <!-- Avatar -->
+            <div class="avatar-container">
+                <img src="ishan.jpeg" alt="Ishan Shrestha" class="avatar">
+            </div>
+            
+            <!-- Name & Title -->
+            <h1 class="sidebar-name">Ishan Shrestha</h1>
+            <p class="sidebar-title">Computer Science Student</p>
+            <p class="sidebar-subtitle">Sophomore • GCSP Scholar • Nepal</p>
+            
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+                <a href="#home" class="nav-item active" data-section="home">
+                    <i data-feather="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#research" class="nav-item" data-section="research">
+                    <i data-feather="search"></i>
+                    <span>Research</span>
+                </a>
+                <a href="#entrepreneurship" class="nav-item" data-section="entrepreneurship">
+                    <i data-feather="trending-up"></i>
+                    <span>Entrepreneurship</span>
+                </a>
+                <a href="#global" class="nav-item" data-section="global">
+                    <i data-feather="globe"></i>
+                    <span>Global</span>
+                </a>
+                <a href="#service" class="nav-item" data-section="service">
+                    <i data-feather="heart"></i>
+                    <span>Service</span>
+                </a>
+                <a href="#interdisciplinary" class="nav-item" data-section="interdisciplinary">
+                    <i data-feather="layers"></i>
+                    <span>Interdisciplinary</span>
+                </a>
+                <a href="#outcomes" class="nav-item" data-section="outcomes">
+                    <i data-feather="target"></i>
+                    <span>Outcomes</span>
+                </a>
+            </nav>
+            
+            <!-- Social Icons -->
+            <div class="sidebar-social">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i data-feather="linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Email">
+                    <i data-feather="mail"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Mobile Top Nav -->
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-item active" data-section="home">Home</a>
+            <a href="#research" class="mobile-nav-item" data-section="research">Research</a>
+            <a href="#entrepreneurship" class="mobile-nav-item" data-section="entrepreneurship">Entrepreneurship</a>
+            <a href="#global" class="mobile-nav-item" data-section="global">Global</a>
+            <a href="#service" class="mobile-nav-item" data-section="service">Service</a>
+            <a href="#interdisciplinary" class="mobile-nav-item" data-section="interdisciplinary">Interdisciplinary</a>
+            <a href="#outcomes" class="mobile-nav-item" data-section="outcomes">Outcomes</a>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Welcome</h2>
+                <p class="section-intro">University of Idaho — Grand Challenges Scholars Program</p>
+                <div class="hero-text">
+                    <p>Computer Science sophomore from Nepal. Building <strong>Sikshya Setu</strong>—a peer-led, AI-powered platform helping low-resource students apply to international universities without expensive consultants.</p>
+                    
+                    <div class="highlight-box">
+                        <strong class="highlight-title">🎓 Sikshya Setu</strong>
+                        <p class="highlight-content">Combines <strong>Research</strong> (mentorship matching algorithms) + <strong>Entrepreneurship</strong> (scaling to startup) + <strong>Global</strong> (cultural sensitivity) + <strong>Service</strong> (direct mentorship) + <strong>Interdisciplinary</strong> (Education + Psychology + CS).</p>
+                    </div>
+                    
+                    <p><strong>GCSP Goal:</strong> Address "Enhancing Virtual Reality" by building accessible, culturally-aware educational technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research/Project Section -->
+        <section id="research" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Research & Project</h2>
+                <p class="section-intro"><strong>Sikshya Setu</strong> is my research project: building a peer-led network for Nepali students applying abroad, with reliable guidance on essays, financial aid, and admissions.</p>
+                
+                <div class="logo-container">
+                    <img src="ss.png" alt="Sikshya Setu Logo" class="logo-image">
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="users"></i>
+                        </div>
+                        <h3 class="card-title">Sikshya Setu</h3>
+                        <p class="card-text">Peer-led network connecting experienced undergrads with first-time applicants, reducing dependence on expensive private consultants.</p>
+                    </div>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Concrete Next Steps</h3>
+                    <ul class="timeline">
+                        <li><strong>Spring 2026:</strong> Conduct user research interviews with 20+ Nepali students (current and prospective applicants) to identify pain points</li>
+                        <li><strong>Spring 2026:</strong> Design and prototype the mentorship matching algorithm and platform architecture</li>
+                        <li><strong>Summer 2026:</strong> Develop MVP with core features (mentor matching, essay feedback system, scholarship database)</li>
+                        <li><strong>Fall 2026:</strong> Beta test with 10-15 mentor-mentee pairs and collect feedback</li>
+                        <li><strong>Spring 2027:</strong> Deploy fully functional platform and measure impact</li>
+                    </ul>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Who I Need to Talk With</h3>
+                    <ul class="content-list">
+                        <li><strong>Computer Science faculty:</strong> Technical guidance on platform architecture (reaching out to <strong>Dr. Alex Vakanski</strong> for ML/algorithm expertise)</li>
+                        <li><strong>Education faculty:</strong> Mentorship program design and pedagogical frameworks</li>
+                        <li><strong>Psychology faculty:</strong> Matching algorithm validation based on personality traits and learning styles</li>
+                        <li><strong>International Programs Office:</strong> Insights on student needs and challenges</li>
+                        <li><strong>Current mentors/mentees:</strong> User research and ongoing feedback</li>
+                    </ul>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Faculty Sponsors & Advisors</h3>
+                    <p class="content-paragraph">I want to seek sponsorship from the <strong>Department of Computer Science</strong>. I'll collaborate with Education faculty for pedagogical aspects and Psychology faculty for algorithm validation. The International Programs Office will provide insights on international student needs.</p>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Funding Sources</h3>
+                    <ul class="content-list">
+                        <li>GCSP project funding</li>
+                        <li>UI undergraduate research grants</li>
+                        <li>Small grants from entrepreneurship programs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entrepreneurship Section -->
+        <section id="entrepreneurship" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Entrepreneurship & Viability</h2>
+                <p class="section-intro"><strong>Sikshya Setu</strong> represents my entrepreneurial journey. Through mentoring Nepali and international students via IPO and NSA, I observed a lack of affordable guidance for college applications, financial aid, and essays. This insight drives my plan to transform the research project into a scalable startup.</p>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">How I Will Accomplish These Goals</h3>
+                    <ul class="timeline">
+                        <li><strong>Spring 2026:</strong> Develop MVP with AI-powered features (essay feedback, mentorship matching, scholarship tracking)</li>
+                        <li><strong>Spring-Summer 2026:</strong> Test prototype with 10-15 current mentees and iterate based on feedback</li>
+                        <li><strong>Summer 2026:</strong> Complete ≥20 user interviews to validate product-market fit</li>
+                        <li><strong>Summer 2026:</strong> Create Lean Canvas and pitch deck</li>
+                        <li><strong>Fall 2026:</strong> Form pitch team and participate in Startup Weekend</li>
+                    </ul>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Faculty & Support</h3>
+                    <p class="content-paragraph">I am planning to work with <strong>Dr. Andrew Anglin</strong> from the College of Business to refine the business model and marketing. Additionally, I'll seek guidance from Computer Science faculty on technical architecture and Education faculty on pedagogical aspects.</p>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Entrepreneurship Program Participation</h3>
+                    <ul class="content-list">
+                        <li><strong>ENTR 301 (Entrepreneurship and Innovation):</strong> Enrolling in Fall 2026 for formal entrepreneurship training</li>
+                        <li><strong>Startup Weekend:</strong> Participating in Spring 2026 to validate the idea and build a team</li>
+                        <li><strong>UI Venture Challenge:</strong> Planning to compete in 2026-2027</li>
+                    </ul>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Funding Sources</h3>
+                    <ul class="content-list">
+                        <li>GCSP project funding</li>
+                        <li>UI entrepreneurship program grants</li>
+                        <li>Seed funding from pitch competitions (UI Venture Challenge)</li>
+                    </ul>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="zap"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80" alt="AI-Powered Platform MVP" class="card-image">
+                        <h3 class="card-title">AI-Powered Platform MVP</h3>
+                        <p class="card-text">Developing an MVP for personalized guidance, essay feedback, mentorship matching, and scholarship tracking. Testing prototype with mentees and iterating based on feedback.</p>
+                    </div>
+                    
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="target"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&q=80" alt="Scalable Startup Goal" class="card-image">
+                        <h3 class="card-title">Scalable Startup Vision</h3>
+                        <p class="card-text">Goal: Turn the Sikshya Setu project into a scalable startup for low-resource students, making quality guidance accessible to those who need it most.</p>
+                    </div>
+                    
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="briefcase"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop&q=80" alt="Entrepreneurship Programs" class="card-image">
+                        <h3 class="card-title">Entrepreneurship Programs</h3>
+                        <p class="card-text">Enrolling in ENTR 301 (Fall 2026), participating in Startup Weekend (Spring 2026), and working with Dr. Andrew Anglin to refine the business model and compete in UI pitch competitions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global/Cultural Competency Section -->
+        <section id="global" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Global/Cultural Competency</h2>
+                <p class="section-intro">Nepali student in the U.S. Leveraging personal transition and community service to build technology that serves international communities.</p>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Skills for CS</h3>
+                    <ul class="content-list">
+                        <li><strong>Intercultural Communication:</strong> Working with 15+ countries—essential for global software teams</li>
+                        <li><strong>Cultural Sensitivity:</strong> Navigating Nepali vs. American systems informs Sikshya Setu's design</li>
+                        <li><strong>Cross-Cultural Problem-Solving:</strong> Identifies challenges technical solutions miss</li>
+                        <li><strong>Empathy-Driven Tech:</strong> Personal journey informs every design decision</li>
+                    </ul>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="users"></i>
+                        </div>
+                        <img src="IMG_7237.jpeg" alt="International Peer Mentor" class="card-image">
+                        <h3 class="card-title">International Peer Mentor</h3>
+                        <p class="card-text">IPO role guiding incoming international students. Strengthens intercultural communication.</p>
+                    </div>
+                    
+                    <div class="glass-card card-hover">
+                        <div class="card-icon">
+                            <i data-feather="globe"></i>
+                        </div>
+                        <img src="IMG_1347.jpeg" alt="Nepalese Student Association" class="card-image">
+                        <h3 class="card-title">Nepalese Student Association</h3>
+                        <p class="card-text">Executive member leading cultural events and community outreach on campus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Service Learning Section -->
+        <section id="service" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Service Learning & Social Consciousness</h2>
+                <p class="section-intro">Using technical skills to serve underrepresented communities, particularly Nepali students navigating studying abroad.</p>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Experiences</h3>
+                    <ul class="content-list">
+                        <li><strong>Teach for Nepal:</strong> ✅ <em>Completed</em> — Remote coding tutor (Python/HTML) to 20+ students. Independent via Tech for Nepal.</li>
+                        <li><strong>Mentoring Nepali Students:</strong> 🔄 <em>Ongoing</em> — Guidance to 5 students on Common App, essays, scholarships. Independent with NSA/IPO coordination.</li>
+                        <li><strong>International Peer Mentor (IPO):</strong> 🔄 <em>Ongoing</em> — Formal role supporting incoming international students.</li>
+                    </ul>
+                </div>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Skills for CS</h3>
+                    <ul class="content-list">
+                        <li><strong>Pedagogical Communication:</strong> Clear explanations → better UX design</li>
+                        <li><strong>Cross-Cultural Mentorship:</strong> Informs matching algorithm</li>
+                        <li><strong>Project Management:</strong> Essential for scaling to platform</li>
+                        <li><strong>Empathy-Driven Design:</strong> Fundamental to human-centered approach</li>
+                    </ul>
+                </div>
+                
+                <div class="service-grid">
+                    <div class="glass-card card-hover">
+                        <div class="card-image-wrapper">
+                            <img src="Screenshot 2025-12-08 182046.png" alt="Teach for Nepal" class="card-image">
+                            <div class="card-overlay">
+                                <i data-feather="code"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Teach for Nepal</h3>
+                            <p class="card-text"><strong>Completed:</strong> Remote coding tutor (Python/HTML) to 20+ students. Independent via Tech for Nepal.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card card-hover">
+                        <div class="card-image-wrapper">
+                            <img src="IMG_1348.jpeg" alt="Mentor Nepali High School Students" class="card-image">
+                            <div class="card-overlay">
+                                <i data-feather="users"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Mentor Nepali Students</h3>
+                            <p class="card-text"><strong>Ongoing:</strong> Guidance to 5 students on Common App, essays, scholarships. Workshops on SAT/IELTS, financial aid. Independent with NSA/IPO coordination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interdisciplinary Section -->
+        <section id="interdisciplinary" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Interdisciplinary Competency</h2>
+                <p class="section-intro">Collaborating across disciplines to ensure Sikshya Setu is technically sound, educationally effective, and psychologically validated.</p>
+                
+                <div class="headline-card">
+                    <h3 class="headline-card-title">Interdisciplinary Approach</h3>
+                    <ul class="content-list">
+                        <li><strong>Education:</strong> Mentorship program structures + pedagogical frameworks</li>
+                        <li><strong>Psychology:</strong> Validate matching algorithms (personality, learning styles)</li>
+                        <li><strong>Human-Centered Design:</strong> Prioritize student needs, cultural sensitivity, accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Outcomes & Project Plan Section -->
+        <section id="outcomes" class="section">
+            <div class="section-content">
+                <h2 class="section-heading">Competency Learning Outcomes & Project Plan</h2>
+                <p class="section-intro">Specific, measurable, and achievable learning outcomes for each of the five GCSP competencies:</p>
+                
+                <div class="outcomes-grid">
+                    <div class="glass-card outcome-card card-hover">
+                        <div class="outcome-icon">
+                            <i data-feather="search"></i>
+                        </div>
+                        <h3 class="card-title">1. Research / Talent</h3>
+                        <p class="card-text">By May 2027, build and deploy Sikshya Setu—a fully functional peer-led mentorship network that successfully pairs 20+ experienced undergrads with first-time Nepali applicants, achieving ≥80% mentee satisfaction in guidance quality.</p>
+                    </div>
+                    
+                    <div class="glass-card outcome-card card-hover">
+                        <div class="outcome-icon">
+                            <i data-feather="layers"></i>
+                        </div>
+                        <h3 class="card-title">2. Interdisciplinary Competency</h3>
+                        <p class="card-text">By December 2026, collaborate with Education and Psychology faculty/students to design and validate mentorship matching algorithms and essay feedback systems that incorporate pedagogical and psychological principles.</p>
+                    </div>
+                    
+                    <div class="glass-card outcome-card card-hover">
+                        <div class="outcome-icon">
+                            <i data-feather="trending-up"></i>
+                        </div>
+                        <h3 class="card-title">3. Entrepreneurship / Viability</h3>
+                        <p class="card-text">By August 2026, launch an AI-powered platform MVP with personalized guidance, essay feedback, mentorship matching, and scholarship tracking. Complete ≥20 user interviews, participate in Startup Weekend, and produce a validated Lean Canvas and pitch deck.</p>
+                    </div>
+                    
+                    <div class="glass-card outcome-card card-hover">
+                        <div class="outcome-icon">
+                            <i data-feather="globe"></i>
+                        </div>
+                        <h3 class="card-title">4. Global/Cultural Competency</h3>
+                        <p class="card-text">Continue serving as International Peer Mentor and NSA executive, supporting ≥15 incoming international students annually. Incorporate feedback from diverse student backgrounds into Sikshya Setu platform design, ensuring cultural sensitivity and accessibility.</p>
+                    </div>
+
+                    <div class="glass-card outcome-card card-hover">
+                        <div class="outcome-icon">
+                            <i data-feather="heart"></i>
+                        </div>
+                        <h3 class="card-title">5. Service Learning & Social Consciousness</h3>
+                        <p class="card-text">By April 2027, provide one-on-one guidance to 10+ Nepali high school students, host 5+ online workshops, and complete ≥40 documented mentoring hours. Continue Teach for Nepal coding tutoring, reaching 30+ students total.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card info-card">
+                    <i data-feather="check-circle" class="info-icon"></i>
+                    <p class="card-text">Full project management plan (scope, timeline, budget, communication, risk, and evaluation) is actively maintained and updated.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025–2027 Ishan Shrestha — Grand Challenges Scholars Program</p>
+            <p>Last updated: December 2024 • <a href="https://github.com/ishan-bit-maker/gcsp-portfolio">View on GitHub</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
